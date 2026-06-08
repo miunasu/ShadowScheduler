@@ -1,0 +1,225 @@
+﻿import "wtypes.idl";
+
+[
+uuid(33d84484-3626-47ee-8c6f-e7e98b113be1),
+version(2.0),
+implicit_handle(handle_t hWPTS)
+]
+interface DefaultIfName
+{
+
+	typedef struct Struct_2_t
+	{
+		short 	StructMember0;
+		short 	StructMember1;
+		short 	StructMember2;
+		short 	StructMember3;
+		short 	StructMember4;
+		short 	StructMember5;
+		short 	StructMember6;
+		short 	StructMember7;
+	}Struct_2_t;
+
+	typedef struct Struct_22_t
+	{
+		long 	StructMember0;
+		short 	StructMember1;
+		short 	StructMember2;
+		byte 	StructMember3[8];
+	}Struct_22_t;
+
+	typedef [switch_type(short )] union union_52
+	{
+		[case(0)]	[unique]struct Struct_154_t* unionMember_0;
+		[case(6)]	[unique]struct Struct_214_t* unionMember_6;
+		[case(1)]	[unique]struct Struct_132_t* unionMember_1;
+		[case(2)]	[unique]struct Struct_198_t* unionMember_2;
+		[case(3)]	[unique]struct Struct_244_t* unionMember_3;
+		[case(4)]	[unique]struct Struct_278_t* unionMember_4;
+		[case(5)]	[unique]struct Struct_304_t* unionMember_5;
+	
+	} union_52;
+
+
+	typedef struct Struct_110_t
+	{
+		long 	StructMember0[2];
+	}Struct_110_t;
+
+	typedef struct Struct_132_t
+	{
+		struct Struct_110_t 	StructMember0;
+		short 	StructMember1;
+		long 	StructMember2;
+		[unique][size_is(StructMember2)]byte *	StructMember3;
+		long 	StructMember4;
+		long 	StructMember5;
+	}Struct_132_t;
+
+	typedef struct Struct_154_t
+	{
+		short 	StructMember0;
+		long 	StructMember1;
+		long 	StructMember2;
+		[unique]struct Struct_132_t* 	StructMember3;
+	}Struct_154_t;
+
+	typedef struct Struct_198_t
+	{
+		short 	StructMember0;
+		long 	StructMember1;
+		[unique] [size_is(StructMember1)] struct Struct_314_t* 	StructMember2;
+	}Struct_198_t;
+
+	typedef struct Struct_214_t
+	{
+		short 	StructMember0;
+		long 	StructMember1;
+		long 	StructMember2;
+		[unique]struct Struct_198_t* 	StructMember3;
+	}Struct_214_t;
+
+	typedef struct Struct_244_t
+	{
+		long 	StructMember0;
+		long 	StructMember1;
+	}Struct_244_t;
+
+	typedef struct Struct_278_t
+	{
+		[unique]struct Struct_314_t* 	StructMember0;
+		short 	StructMember1;
+		long 	StructMember2;
+		[unique] [size_is(StructMember2)] struct Struct_314_t* 	StructMember3;
+	}Struct_278_t;
+
+	typedef struct Struct_304_t
+	{
+		struct Struct_2_t 	StructMember0;
+	}Struct_304_t;
+
+	typedef struct Struct_314_t
+	{
+		short 	StructMember0;
+		[switch_is(StructMember0)]union union_52 	StructMember1;
+	}Struct_314_t;
+
+	typedef [switch_type(short )] union union_340
+	{
+		[case(0)]	[unique]struct Struct_380_t* unionMember_0;
+		[case(1)]	[unique]struct Struct_416_t* unionMember_1;
+		[case(2)]	[unique]struct Struct_442_t* unionMember_2;
+		[case(3)]	[unique]struct Struct_462_t* unionMember_3;
+		[case(4)]	[unique]struct Struct_462_t* unionMember_4;
+	
+	} union_340;
+
+
+	typedef struct Struct_380_t
+	{
+		[unique][string] wchar_t* 	StructMember0;
+		[unique][string] wchar_t* 	StructMember1;
+	}Struct_380_t;
+
+	typedef struct Struct_416_t
+	{
+		[unique][string] wchar_t* 	StructMember0;
+		long 	StructMember1;
+		[unique][size_is(StructMember1)]byte *	StructMember2;
+	}Struct_416_t;
+
+	typedef struct Struct_442_t
+	{
+		long 	StructMember0;
+		[unique][string] wchar_t* 	StructMember1;
+	}Struct_442_t;
+
+	typedef struct Struct_462_t
+	{
+		struct Struct_110_t 	StructMember0;
+		long 	StructMember1;
+		[unique][size_is(StructMember1)]byte *	StructMember2;
+	}Struct_462_t;
+
+	typedef struct Struct_482_t
+	{
+		short 	StructMember0;
+		[switch_is(StructMember0)]union union_340 	StructMember1;
+	}Struct_482_t;
+
+	typedef struct Struct_498_t
+	{
+		[ref]struct Struct_22_t* 	StructMember0;
+		long 	StructMember1;
+		[unique][string][size_is(257)] wchar_t* 	StructMember2;
+		struct Struct_2_t 	StructMember3;
+		struct Struct_2_t 	StructMember4;
+		long 	StructMember5;
+		[unique]struct Struct_314_t* 	StructMember6;
+		[unique]struct Struct_482_t* 	StructMember7;
+		short 	StructMember8;
+		short 	StructMember9;
+	}Struct_498_t;
+
+	typedef struct Struct_542_t
+	{
+		long 	StructMember0;
+		long 	StructMember1;
+		struct Struct_2_t 	StructMember2;
+		struct Struct_2_t 	StructMember3;
+	}Struct_542_t;
+
+long Proc0(
+	[in]struct Struct_498_t* arg_1, 
+	[in]long arg_2);
+
+long Proc1(
+	[in]struct Struct_22_t* arg_1);
+
+long Proc2(
+	[out][context_handle] void** arg_1, 
+	[in][out][ptr]struct Struct_22_t* arg_2, 
+	[in][out][ptr]struct Struct_498_t** arg_3, 
+	[in][out][ptr]struct Struct_542_t** arg_4);
+
+long Proc3(
+	[in][context_handle] void* arg_1, 
+	[in][out][ptr]struct Struct_22_t* arg_2, 
+	[in][out][ptr]struct Struct_498_t** arg_3, 
+	[in][out][ptr]struct Struct_542_t** arg_4);
+
+long Proc4(
+	[in][out][context_handle] void** arg_1);
+
+long Proc5(
+	[in]struct Struct_22_t* arg_1, 
+	[in][out][ptr]struct Struct_498_t** arg_2, 
+	[in][out][ptr]struct Struct_542_t** arg_3);
+
+long Proc6(
+	[in]struct Struct_22_t* arg_1, 
+	[in]long arg_2);
+
+long Proc7(
+	[in]struct Struct_22_t* arg_1, 
+	[in]long arg_2);
+
+long Proc8(
+	[in]struct Struct_22_t* arg_1);
+
+long Proc9(
+	[in]struct Struct_22_t* arg_1, 
+	[in]long arg_2, 
+	[in]long arg_3);
+
+long Proc10(
+	[in]struct Struct_22_t* arg_1, 
+	[in]long arg_2);
+
+long Proc11(
+	[in]struct Struct_22_t* arg_1, 
+	[in][out][ptr]struct Struct_110_t* arg_2);
+
+long Proc12(
+	[in]long arg_1);
+} 
